@@ -1,13 +1,63 @@
+
+# coding: utf-8
+
+# # Using Python to investigate data
+
+# In[ ]:
+
+
+
+
+# In[ ]:
+
+
+
+
+# In[ ]:
+
+
+
+
+# In[ ]:
+
+
+
+
+# In[ ]:
+
+
+
+
+# In[ ]:
+
+
+
+
+# # Loading Python scripts
+# If you want to work on improving Python scripts in a Jupyter notebook, you can easily load them with the command `%load filename` as it is executed in the next cell.
+
+# In[ ]:
+
+# %load ./tutorial.py
 # This section imports modules installed from third-party packages
 import matplotlib.pyplot as plt
 from matplotlib.colors import Normalize
 from matplotlib import rcParams, image
 import numpy as np
 
+
+# In[ ]:
+
+df = pd.read_csv('alpleo.csv')
+df.head()
+
+
+# In[ ]:
+
 # This section would import modules created by the user
+## Advanced could use the 'isort' module to clean up imports
 
-
-# # Let's import the data we want to use from the file 'alpleo9.p' using the pickle function
+# # Let's import the data we want to use from the file 'alpleo9.csv' using the np. function
 # file_to_read = open('alpleo9.p', 'rb') # This opens the file for Python to read
 # alpleo9 = pickle.load(file_to_read) # This unpacks the included data into a Python dictionary named 'alpleo9'
 #
@@ -59,3 +109,9 @@ import numpy as np
 my_image = image.imread('N1530370686.png')
 plt.imshow(my_image,vmin=0.1,vmax=0.2)
 plt.show()
+
+
+# In[ ]:
+
+
+
